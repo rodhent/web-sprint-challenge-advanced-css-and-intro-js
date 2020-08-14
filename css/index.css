@@ -89,7 +89,6 @@ video {
   vertical-align: baseline;
 }
 
-
 /*GENERAL STYLES*/
 html {
   font-size: 62.5%;
@@ -209,55 +208,187 @@ button:hover {
   width: 100%;
 }
 
-/*Styles for table at 500px*/
+/*Styles for 375px*/
 
-@media(max-width: 500px){
+@media (max-width: 375px) {
+  nav {
+    width: 70%;
+  }
 
-nav {
-  width: 60%;
-  font-size: 1rem;
+  a {
+    font-size: 1.5rem;
+  }
+
+  .title-container,
+  h1 {
+    font-size: 4rem;
+  }
 }
 
-nav h1 {
-  font-size: 1rem;
-}
+/*Styles for 500px*/
 
-.title-container,
-h1 {
-  font-size: 4rem;
-}
+@media (max-width: 500px) {
+  nav {
+    width: 60%;
+  }
 
-.title-container div {
-  width: 100%;
-  align-items: center;
-  height: 40vh;
-  margin: 5% 0;
-}
-
-.title-container hr {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
-
-.artists-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
-}
-
-.artist {
-  width: 100%;
-  font-size: 1rem;
-}
-
-.artist a{
+  a {
     font-size: 2rem;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  .title-container,
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container div {
+    width: 100%;
+    align-items: center;
+    height: 40vh;
+    margin: 5% 0;
+  }
+
+  .title-container hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .artist {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .artist a {
+    font-size: 2rem;
+  }
+
+  .artist img {
+    width: 60%;
+    height: 50%;
+    margin-bottom: 5%;
+  }
 }
 
-.artist img {
-  width: 60%;
-  height: 50%;
-  margin-bottom: 5%;
+/*Styles for 768px*/
+
+@media (max-width: 768px) {
+  nav {
+    width: 60%;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  .title-container,
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container div {
+    width: 100%;
+    align-items: center;
+    height: 40vh;
+    margin: 5% 0;
+  }
+
+  .title-container hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .artist {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .artist a {
+    font-size: 2rem;
+  }
+
+  .artist img {
+    width: 60%;
+    height: 50%;
+    margin-bottom: 5%;
+  }
+}
+
+/*Styles for 1024px*/
+
+@media (max-width: 1024px) {
+  nav {
+    width: 60%;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  .title-container,
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container div {
+    width: 100%;
+    align-items: center;
+    height: 40vh;
+    margin: 5% 0;
+  }
+
+  .title-container hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+
+  .artist {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .artist a {
+    font-size: 2rem;
+  }
+
+  .artist img {
+    width: 60%;
+    height: 50%;
+    margin-bottom: 5%;
+  }
 }

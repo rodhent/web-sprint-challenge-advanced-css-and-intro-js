@@ -34,7 +34,10 @@ Also, the use of Aria attributes it's essential for people with disability.
 
 3. How would you explain the concept of a variable to someone new to programming?
 
+Variable is a value that can change, depending on conditions or on information passed to the program.
+
 4. What is the purpose of using functions in code?
+   The purpose to use functions is to be reusable and also to reduce the size of coding.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

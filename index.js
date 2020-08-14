@@ -254,9 +254,16 @@ console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(array) {
+  let artists20thCentury = [];
+  artists20thCentury = artists.filter((year) => {
+    return year.years > "1900";
+  });
+  for (let i = 0; i < artists20thCentury.length; i++) {
+    console.log(artists20thCentury[i].name);
+  }
 }
+get20s(artists);
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -268,9 +275,12 @@ function get20s(/* Code here */) {
  *
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
-function removeArtist(/*code here*/) {
-  /* code here */
+function removeArtist(artistsArray, index) {
+  artistsArray.shift();
+  console.log(artistsArray.length);
 }
+
+removeArtist(artists, 0);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -285,9 +295,20 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(artists) {
+  artists.splice(0, 0, {
+    id: 33,
+    name: "Rod Hentringer",
+    years: "1986 - Present",
+    genre: "Surrealism",
+    nationality: "Luxembourger",
+    bio:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non ex a ex fermentum sodales et et sapien. Ut rutrum iaculis odio accumsan ornare. Phasellus rutrum sit amet urna vitae porta. Duis scelerisque ante nisi, ut gravida magna hendrerit a. Praesent dapibus arcu odio, id laoreet mi eleifend hendrerit. Maecenas lectus mauris, euismod in sem in, varius dapibus nunc. Mauris diam augue, lacinia a elementum in, semper quis mauris. Nunc fringilla feugiat viverra. Sed vel nisl magna. Phasellus lacinia, massa sed hendrerit interdum, sem nisi mattis augue, vitae ornare nibh nisi ut eros. Cras vel tempus justo. Cras in tincidunt massa. In ut pellentesque tortor. Mauris eget ex quis sapien pulvinar imperdiet.",
+  });
+  console.log(artists);
 }
+
+addArtist(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -297,9 +318,15 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(artists) {
+  let paintingFilter = artists.filter((paint) => {
+    return paint.paintings > 100;
+  });
+
+  console.log(paintingFilter);
 }
+
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
